@@ -115,7 +115,7 @@ export default function ProductPage({ params }: { params: { product: string } })
           مشاركة
           <Share2 />
         </Button>
-        <p className="text-gray-600">
+        <p className="text-gray-600 text-right  text-xs md:text-base">
           الرئيسية / المتجر / {data.name}
         </p>
       </div>
