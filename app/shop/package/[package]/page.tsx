@@ -204,7 +204,7 @@ export default function ProductPage({ params }: { params: { package: string } })
                     src={image}
                     alt={`Product image ${index}`}
                     layout="fill"
-                    className='h-full w-full'
+                    className='w-full h-full object-cover cursor-pointer'
                     onClick={() => setFullScreenImage(image)}
                   />
                 </div>
