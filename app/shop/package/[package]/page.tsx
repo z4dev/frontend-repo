@@ -134,7 +134,7 @@ export default function ProductPage({ params }: { params: { package: string } })
         مشاركة
         <Share2 />
         </Button>
-        <p className="text-gray-600  text-xs md:text-base">
+        <p className="text-gray-600 text-right  text-xs md:text-base">
           الرئيسية / المتجر / {Package.name}
         </p>
       </div>
