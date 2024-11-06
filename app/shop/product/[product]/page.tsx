@@ -146,7 +146,7 @@ export default function ProductPage({ params }: { params: { product: string } })
             </div>
           </div>
           <div className="bg-gray-100 p-4 rounded-lg mb-6 w-full">
-            <h3 className="font-semibold mb-2 text-right">تفاصيل المجموعة</h3>
+            <h3 className="font-semibold mb-2 text-right">تفاصيل المنتج</h3>
             <p className="text-right text-gray-700">{data.description}</p>
           </div>
           <button onClick={() => handleAddToCart(data._id)} className="flex items-center justify-center w-full bg-purple text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">
