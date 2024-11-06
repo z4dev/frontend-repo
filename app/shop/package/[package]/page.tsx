@@ -138,7 +138,7 @@ export default function ProductPage({ params }: { params: { package: string } })
           الرئيسية / المتجر / {Package.name}
         </p>
       </div>
-      <div className="h-screen lg:h-[80vh] flex flex-col-reverse lg:flex-row gap-8">
+      <div className="h-screen lg:h-fit flex flex-col-reverse lg:flex-row gap-8">
        <div className="lg:w-1/2 flex flex-col items-end">
           <div className="bg-gray-100 p-4 rounded-lg  mb-6 w-full">
             <div className="flex justify-between items-center">
@@ -170,11 +170,11 @@ export default function ProductPage({ params }: { params: { package: string } })
 
           </div>
           <div className=" bg-gray-100 p-4 rounded-lg mb-6 w-full">
-            <h3 className="font-semibold mb-2 text-right">تفاصيل المجموعة:</h3>
-            <p className="text-right text-gray-700">{Package.description}</p>
+            <h3 className="font-semibold mb-2 text-right">تفاصيل المنتج</h3>
+            <pre className="text-right text-gray-700 font-sans">{Package.description}</pre>
           </div>
           <div className="bg-gray-100 p-4 rounded-lg mb-6 w-full">
-            <h3 className="font-semibold mb-2 text-right">محتويات المجموعة:</h3>
+            <h3 className="font-semibold mb-2 text-right">محتويات المجموعة</h3>
             <ul className="text-right text-gray-700 rtl">
               {productsForThatPackage.map((item:any, index:number) => (
                 <li key={index} className="flex justify-end items-center">
@@ -195,7 +195,7 @@ export default function ProductPage({ params }: { params: { package: string } })
             spaceBetween={30}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            className="w-full h-full rounded-lg"
+            className="w-900 h-full lg:h-[750px] rounded-lg"
           >
             {packageData.data.Package.images.map((image:any ,index:number) => (
               <SwiperSlide key={index}>
